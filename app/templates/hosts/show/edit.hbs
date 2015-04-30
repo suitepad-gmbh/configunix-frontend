@@ -1,7 +1,7 @@
 <form {{action 'save' on='submit'}}>
   {{textarea value=model.puppetConfig class="form-control" rows="20"}}
   <div class="form-actions">
-    {{#link-to 'hosts.show' model class="btn btn-default"}}Cancel{{/link-to}}
+    {{#link-to 'hosts.show.index' model class="btn btn-default"}}Cancel{{/link-to}}
     {{#data-button type="submit" class="btn-primary" model=model}}Save{{/data-button}}
   </div>
 </form>
