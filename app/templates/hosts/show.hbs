@@ -1,0 +1,27 @@
+<h1>Host : {{model.instanceId}}</h1>
+
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Instance ID</th>
+      <td>{{model.instanceId}}</td>
+      <th>Created at</th>
+      <td>{{model.createdAt}}</td>
+    </tr>
+    <tr>
+      <th>Public DNS name</th>
+      <td>{{model.dnsName}}</td>
+      <th>Public IP address</th>
+      <td>{{model.publicIpAddress}}</td>
+    </tr>
+    <tr>
+      <th>Private DNS name</th>
+      <td>{{model.privateDnsName}}</td>
+      <th>Private IP address</th>
+      <td>{{model.dnsName}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Configuration</h2>
+{{outlet}}
