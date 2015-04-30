@@ -10,6 +10,4 @@ router = Router.map ->
     @route 'show', path: ':host_id', ->
       @route 'edit'
 
-  @route 'hosts/show/edit'
-
 `export default router`
