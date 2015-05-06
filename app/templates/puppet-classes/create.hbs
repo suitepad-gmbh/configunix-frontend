@@ -1,0 +1,12 @@
+<h1>Add puppet class</h1>
+
+<form {{action 'save' on='submit'}}>
+  <div class="form-group">
+    <label for="puppet-class-name">Name</label>
+    {{input type='text' id='puppet-class-name' value=model.name class='form-control'}}
+  </div>
+  <div class="form-actions">
+    {{#link-to 'puppet_classes.index' class="btn btn-default"}}Cancel{{/link-to}}
+    {{#data-button type="submit" class="btn-primary" model=model}}Save{{/data-button}}
+  </div>
+</form>

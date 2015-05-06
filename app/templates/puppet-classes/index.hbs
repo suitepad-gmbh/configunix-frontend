@@ -1,0 +1,22 @@
+<div class="btn-group pull-right">
+  {{#link-to 'puppet_classes.create' class="btn btn-default"}}<em class="fa fa-plus"></em>{{/link-to}}
+</div>
+<h1>Puppet classes</h1>
+<table class="table table-striped">
+  <tbody>
+  <tr>
+    <th>Name</th>
+    <th></th>
+  </tr>
+  {{#each puppetClass in model}}
+    <tr>
+      <td>{{puppetClass.name}}</td>
+      <td class="actions">
+        {{#link-to 'puppet_classes.show' puppetClass class="btn btn-default btn-xs"}}<em class="fa fa-search"></em>{{/link-to}}
+        {{#link-to 'puppet_classes.edit' puppetClass class="btn btn-default btn-xs"}}<em class="fa fa-pencil"></em>{{/link-to}}
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+

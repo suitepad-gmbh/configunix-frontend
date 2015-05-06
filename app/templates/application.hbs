@@ -10,6 +10,12 @@
       {{#link-to 'application' class="navbar-brand"}}configunix{{/link-to}}
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        {{#if session.isAuthenticated}}
+          {{#link-to 'hosts' tagName='li'}}<a href="#">Hosts</a>{{/link-to}}
+          {{#link-to 'puppet_classes' tagName='li'}}<a href="#">Puppet classes</a>{{/link-to}}
+        {{/if}}
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
           <li><a href='#' {{ action 'invalidateSession' }}>Logout</a></li>
