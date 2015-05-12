@@ -3,6 +3,7 @@
   <tbody>
   <tr>
     <th>#</th>
+    <th>Name</th>
     <th>Public DNS name</th>
     <th>Private DNS name</th>
     <th></th>
@@ -10,6 +11,7 @@
   {{#each host in model}}
     <tr>
       <td>{{host.instanceId}}</td>
+      <td>{{host.name}}</td>
       <td>{{host.dnsName}}</td>
       <td>{{host.privateDnsName}}</td>
       <td class="actions">
