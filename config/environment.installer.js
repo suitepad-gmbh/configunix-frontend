@@ -7,7 +7,7 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     apiHost: '',
-    apiNamespace: 'api/v1',
+    apiNamespace: 'api',
     'simple-auth': {
       authorizer: 'simple-auth-authorizer:oauth2-bearer',
       store: 'simple-auth-session-store:local-storage',
